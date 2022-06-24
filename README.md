@@ -24,7 +24,7 @@
 
 6. This is selected category page of Retail onine shopping
 
-![selected-category](./Assignment/Wireframe/selected%20categoriy%20page.png)
+![selected-category](./Assignment/Wireframe/Selected%20category%20page.png)
 
 7. This is selected product page of Retail onine shopping
 
