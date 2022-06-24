@@ -18,15 +18,12 @@
 
 ![New-Arrival](./Assignment/Wireframe/new%20arivals.png)
 
-#5. This is New arrival items page of Retail onine shopping
 
-![new-arrivals](./Assignment/Wireframe/new%20arivals.png)
-
-6. This is selected category page of Retail onine shopping
+5. This is selected category page of Retail onine shopping
 
 ![selected-category](./Assignment/Wireframe/Selected%20category%20page.png)
 
-7. This is selected product page of Retail onine shopping
+6. This is selected product page of Retail onine shopping
 
 ![selected-product](./Assignment/Wireframe/selected%20Product.png)
 
