@@ -30,3 +30,7 @@
 7. This is Our services page of  online retail shop 
 
 ![our-services](./Assignment/Wireframe/Our%20service%20page.png)
+
+8. This is Contact us page of  online retail shop 
+
+![Contact-us](./Assignment/Wireframe/Contact%20us%20page.png)
