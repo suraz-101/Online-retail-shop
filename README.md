@@ -12,7 +12,7 @@
 
 #3. This is Available items page of Retail online shopping
 
-![Available](./Assignment/Wireframe/available%20items.png)
+![Available](./Assignment/Wireframe/available%20items%20.png)
 
 #4. This is New arrival items page of Retail onine shopping
 
