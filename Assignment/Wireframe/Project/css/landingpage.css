@@ -170,6 +170,11 @@ input{
 
 }
 
+.menu ul li:hover a{
+    color: #FFA500;
+
+}
+
 
 
 
@@ -309,6 +314,8 @@ justify-content: center;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+    text-shadow: 4px 4px 3px #FFA500 ;
+    
 }
 
 .text-area p{
@@ -351,7 +358,7 @@ justify-content: center;
 
 .offers
 {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     border: 1px solid black;
 }
@@ -364,15 +371,16 @@ justify-content: center;
 }
 
 .offer-products{
-    /* border: 1px solid white; */
+    
     background-color: #1F4690;
-    height: 80%;
+    height: 60%;
     width: 95%;
     margin: auto;
     box-shadow: 10px 10px 30px black;
-    /* border-radius: 20px; */
+    padding-bottom: 20px;
+  
     display: flex;
-    /* justify-content: center; */
+   
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -383,8 +391,9 @@ justify-content: center;
 }
 
 .product{
-    height: 90%;
+    height: 80%;
     width: 15%;
+    
     /* border: 1px solid black; */
     border-radius: 25px;
     margin: 20px;
@@ -466,6 +475,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .footer-content
@@ -506,11 +516,18 @@ justify-content: center;
 .sections ul li a{
     color: white;
     line-height: 2;
+    text-decoration: none;
+}
+
+.sections ul li:hover a{
+    color: #FFA500;
+    transition: all 0.5s ease-in-out;
 }
 
 #facebook
 {
     color: white;
     margin-left: 10px;
+    
 }
 
