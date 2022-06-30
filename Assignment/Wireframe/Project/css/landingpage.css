@@ -623,6 +623,7 @@ justify-content: center;
          text-align: center;
          overflow: hidden;
         transition: all 1s ease-in-out;
+        /* border-radius: 0 0 100% 0; */
 
           
 
@@ -705,15 +706,9 @@ justify-content: center;
      width: 25%;
  }
    
-      /* .slider,.text-area{
-          height: auto;
-          font-size: auto;
-         
-          
-      } */
-
-     
-    
+  
+   
+      
 
       
     
