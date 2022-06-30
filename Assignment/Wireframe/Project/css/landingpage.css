@@ -77,7 +77,7 @@
 }
 
 
-.button:hover{
+.button:hover, .shop-button:hover, #cart:hover{
     transform: scale(1.1);
 }
 .buttons
@@ -184,14 +184,15 @@ input{
 
 .shop-button
 {
-  
-    width: 10%;
-    text-align: center;
-     padding: 5px;
+    padding: 5px 10px;
+    
+    border-radius: 10px;
     background-color: #FFA500;
-    border-radius: 20px;
-    cursor: pointer;
     color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+  
+    
 }
 #cart 
 {
@@ -215,8 +216,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
-/* overflow-x: hidden;
-scroll-behavior: smooth; */
+ 
     
     
 }
@@ -224,25 +224,77 @@ scroll-behavior: smooth; */
 .slides
 {
     height: 80%;
-    width: 70%;
+    width: 80%;
     background-color: white;
     box-shadow: 10px 10px 40px black;
     position:relative;
     display: flex;
-    justify-content: center;
+    /* border: 2px solid black; */
+    
     align-items: flex-end;
+   overflow: hidden;
     border-radius: 20px;
+
+    /* overflow-x: auto;
+    scroll-behavior: smooth;  */
     /* flex-shrink: 0; */
   
 }
+
+
+
+.slide
+{
+    /* position: relative; */
+   
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+   
+   
+   
+   
+}
+
+.slides .text-area
+{
+    animation-name: slide-side;
+    animation-duration: 2s ;
+}
+
+
+    
+@keyframes slide-side
+{
+    0%
+    {
+        top:100%
+    }
+    
+    100%
+    {
+        top: 6%;
+    }
+}
+
+.slide .image{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+    
+}
+
+
+    
+
 
 #left-arrow
 {
     height: 20px;
     width: 20px;
     /* background-color: black; */
-    border-bottom: 2px solid white;
-    border-left: 2px solid white;
+    border-bottom: 2px solid #FFA500;
+    border-left: 2px solid #FFA500;
     transform: rotate(45deg);
     position: absolute;
     top: 150px;
@@ -255,8 +307,8 @@ scroll-behavior: smooth; */
 {
     height: 20px;
     width: 20px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    border-top: 2px solid #FFA500;
+    border-right: 2px solid #FFA500;
     transform: rotate(45deg);
     position: absolute;
     top: 150px;
@@ -270,6 +322,13 @@ scroll-behavior: smooth; */
     opacity: 1;
 
 }
+.circles
+{
+    display: flex;
+    position: absolute;
+    left: 45%;
+   
+}
 
 .circle
 {
@@ -280,8 +339,10 @@ scroll-behavior: smooth; */
     margin: 5px;
     border-radius: 50%;
     cursor: pointer;
-    
-    top: 0px;
+    /* position: absolute; */
+    bottom: 0;
+    left: 50%;
+    /* top: 0px; */
     background-origin: 0;
     z-index: 2;
     
@@ -297,17 +358,11 @@ scroll-behavior: smooth; */
     background-color: #FFA500;
 }
 
-.slides .image
-{
-    height: 100%;
-    width: 100%;
-    /* object-fit: cover; */
-    border-radius: 20px;
-    position: absolute;
-}
+
 .text-area
 {
     position: absolute;
+    /* position: fixed; */
     z-index: 3;
     top:20px;
     left: 50px;
@@ -317,7 +372,7 @@ scroll-behavior: smooth; */
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
-    text-shadow: 4px 4px 3px #FFA500 ;
+    /* text-shadow: 4px 4px 3px #FFA500 ; */
    
 }
     
@@ -390,11 +445,13 @@ scroll-behavior: smooth; */
     align-items: center;
     overflow-x: auto;
     scroll-behavior: smooth;
+   
 
 
 
 
 }
+
 
 .product{
     height: 80%;
@@ -406,6 +463,11 @@ scroll-behavior: smooth; */
     flex-shrink: 0;
     box-shadow: 10px 10px 20px black;
     position: relative;
+}
+
+.product:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .image-section
@@ -537,3 +599,132 @@ scroll-behavior: smooth; */
     
 }
 
+#login,#shopnow,#bars
+{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:900px)
+  {
+      .navwrapper .menu ul{
+          
+          position: absolute;
+          background-color: #1F4690;
+          top: 120px;
+          right: 100%;
+          z-index: 5;
+          height: 100%;
+          width: 100%;
+         text-align: center;
+         overflow: hidden;
+        transition: all 1s ease-in-out;
+
+          
+
+
+      }
+
+     .menu ul li {
+          margin: 20px;
+         
+
+      }
+
+      
+
+      
+
+      /* .navwrapper .menu ul li {
+          display: block;
+
+      }; */
+
+      .navwrapper .menu ul.active{
+          display: block;
+          right: 0%;
+          list-style: 20px;
+      }
+
+     
+      .buttons
+      {
+         /* border: 1px solid #FFA500; */
+          /* height: 70px; */
+          width: 10%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+      
+      }
+      .button{
+          margin-right: 10px;
+      }
+      .button span, .shop-button span{
+         
+          display: none;
+          
+      
+      }
+
+      #login,#shopnow,#bars{
+          display: block;
+
+      }
+
+      .search-bar
+      {
+          width: 50%;
+      }
+
+      .menubar{
+          padding: 10px;
+          
+      }
+      .slider{
+          height: auto;
+          padding: 10px;
+      }
+      .slides
+      {
+          height: auto;
+
+          /* font-size: smaller; */
+      }
+    .offer-products 
+    {
+        display: flex;
+        width:100%;
+     
+    }
+ .product{
+     width: 25%;
+ }
+   
+      /* .slider,.text-area{
+          height: auto;
+          font-size: auto;
+         
+          
+      } */
+
+     
+    
+
+      
+    
+}
+
+@media screen and (max-width:550px) {
+    .product{
+        width: 40%;
+    }
+    
+}
+
+
+    
