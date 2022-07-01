@@ -35,7 +35,7 @@
             </div>
 
             <div class="menubar">
-                <div class="burger"><i id="bars" class="fa-solid fa-bars fa-2x"></i></div>
+                <div class="burger" ><i id="bars" class="fa-solid fa-bars fa-2x" ></i></div>
                 <div class="menu">
                    
                      <ul class="links">
@@ -69,10 +69,17 @@
                         <p>Saving plus free shipping you can only get here.</p>
                         <div class="buy-button">Buy now</div>
                     </div>
-                    <div class="slide"><img class="image" src="./image/pods.png" alt="">
+                    <div class="slide">
+                        <img class="image" src="./image/pods.png" alt="">
+                        <!-- <img class="image" src="./image/offer.png" alt=""> -->
+                        
                     </div>
-                     <div class="slide"><img class="image" src="./image/offer.png" alt="">
+                    <div class="slide">
+                        
+                        <img class="image" src="./image/offer.png" alt="">
+                        
                     </div>
+                    
                     
                    
                     
@@ -188,10 +195,11 @@
                     
                 </div>
             </div>
+          
            
 
         </div>
-
+       
         <div class="footer-section">
             <div class="footer-content">
                 <div class="sections">
@@ -250,6 +258,18 @@
             
 
         }
+
+      
+
+        $(document).ready(function()
+        {
+            $('#bars').click(function()
+            {
+                $('ul').toggleClass('active');
+                
+            });
+
+        });
     </script>
 </body>
 </html>
