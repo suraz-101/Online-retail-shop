@@ -248,6 +248,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
     flex-shrink: 0;
+   
     /* overflow-x: auto; */
     /* scroll-behavior: smooth; 
     object-fit: cover; */
@@ -367,12 +368,18 @@ justify-content: center;
     z-index: 3;
     top:20px;
     left: 50px;
+    /* border-top: 5px solid #FFA500; */
+    border-right: 5px solid #FFA500;
+    border-bottom:5px solid #FFA500;
+    padding: 20px;
+    border-radius: 0px 20px 0px 20px;
 }
 
 .text-area h2{
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
+   
     /* text-shadow: 4px 4px 3px #FFA500 ; */
    
 }
@@ -384,33 +391,42 @@ justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     line-height: 10px;
+    text-shadow: 3px 3px 4px black;
+    
 
 }
 
 
 .text-area span{
     color: white;
+    border-left: 5px solid #FFA500;
+    border-right: 5px solid #FFA500;
     background-color:  #1F4690;
+ 
     margin-left: 70px;
-    line-height: 50px;
+    line-height: 60px;
     padding: 8px;
     border-radius: 40px 0px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
+   
 }
 
 .buy-button
 {
-    z-index: 3;
+    z-index: 4;
     position: absolute;
     color: white;
     top: 200px;
     left: 100px;
+    border-left: 5px solid #1F4690;
+    border-right: 5px solid #1F4690;
    background-color:  #FFA500;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
+    text-shadow: 3px 3px 4px black;
     
 }
 
@@ -697,6 +713,7 @@ justify-content: center;
 
           /* font-size: smaller; */
       }
+
     .offer-products 
     {
         display: flex;
@@ -706,6 +723,8 @@ justify-content: center;
  .product{
      width: 25%;
  }
+
+ 
    
   
    
