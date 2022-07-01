@@ -77,9 +77,9 @@
                    
                     
                     <div class="circles">
-                        <div class="circle active"></div>
-                        <div class="circle "></div>
-                        <div class="circle "></div>
+                        <div class="circle active" onclick= "sliderchange('./image/pods.png')"></div>
+                        <div class="circle " onclick= "sliderchange('./image/offer.png')"></div>
+                        <div class="circle " onclick= "sliderchange('./image/leatherbag.png')"></div>
                         <div class="circle "></div>
                     </div>
                     
@@ -188,6 +188,7 @@
                     
                 </div>
             </div>
+           
 
         </div>
 
@@ -243,14 +244,12 @@
     </div>
 
     <script>
-        $(document).ready(function()
+        function sliderchange(image)
         {
-            $("#bars").click(function()
-            {
-                $('ul').toggleClass("active")
-            })
+            document.querySelector('.image').src=image;
+            
 
-        });
+        }
     </script>
 </body>
 </html>
