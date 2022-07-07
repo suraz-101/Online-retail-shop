@@ -206,7 +206,7 @@ input{
 {
     height: 100vh;
     width: 100%;
-    background-color: #FFE5B4;
+    background-color: white;
 }
 .slider
 {
@@ -442,11 +442,12 @@ justify-content: center;
 }
 .heading
 {
-    /* height: 20%; */
+    
     width: 90%;
     margin: auto;
     padding:15px ;
-    /* border: 1px solid white; */
+   /* background-color: #FFA500; */
+   text-align: center;
 }
 
 .offer-products{
@@ -493,6 +494,7 @@ justify-content: center;
 .image-section
 {
     height: 70%;
+    
     background-color: #1F4690;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
@@ -639,6 +641,15 @@ justify-content: center;
     cursor: pointer;
 }
 
+.first-section
+{
+    width: 100%;
+    height: 40vh;
+}
+
+.shadow{
+    box-shadow: 5px 5px 20px black;
+}
 
 
 
