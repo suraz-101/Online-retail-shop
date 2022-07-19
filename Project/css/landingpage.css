@@ -660,7 +660,15 @@ justify-content: center;
     box-shadow: 5px 5px 20px black;
 }
 
+.cursor-pointer
+{
+    cursor: pointer;
+}
 
+.color-navy
+{
+    background-color: #1F4690;
+}
 
 @media screen and (max-width:900px)
   {
