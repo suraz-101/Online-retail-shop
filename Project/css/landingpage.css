@@ -99,6 +99,52 @@
 
 }
 
+.buttons .button .login-form
+{
+    position: absolute;
+    background-color: #1F4690;
+    z-index: 9;
+    top:25px;
+    
+    width: 400px;
+    border: 1px solid #FFA500;
+    display: none;
+   text-align: center;
+   overflow: hidden;
+   transition: all 2s ease-in-out;
+
+   
+   
+   
+    
+    
+}
+
+.buttons #login-button:hover .login-form{
+    display: block;
+    right:0%;
+   
+    
+}
+
+.items-nav
+{
+    height: 30px;
+}
+
+.items-nav ul{
+    z-index: 9;
+    /* display: none; */
+}
+
+.items-nav .categories a:hover .categories ul{
+    display: block;
+}
+
+
+
+
+
 .button{
     padding: 5px 10px;
     
@@ -736,6 +782,10 @@ del{
 
 @media screen and (max-width:900px)
   {
+
+  
+
+   
       .navwrapper .menu ul{
           
           position: absolute;
@@ -750,9 +800,7 @@ del{
         transition: all 1s ease-in-out;
         /* border-radius: 0 0 100% 0; */
 
-          
-
-
+        
       }
 
      .menu ul li {

@@ -27,10 +27,64 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <div class="button"><span>Login/sign in</span><i id="login" class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></div>
-                    <span>
-                        <i id="cart" class="fa-solid fa-cart-plus fa-2x"></i>
-                    </span>
+                    <div class="button" id="login-button"><span>Login/sign in</span>
+                        <div class="login-form shadow">
+                            <div class="container text-center p-4 border">
+                                <form>
+                                    <!-- Email input -->
+                                    <div class="mb-4">
+                                      <input type="email" id="form2Example1" class="form-control" placeholder="Enter email address"/>
+                                    </div>
+                                    <!-- Password input -->
+                                    <div class="mb-2">
+                                      <input type="password" id="form2Example2" class="form-control" placeholder="Enter password"/>
+                                    </div>
+                                  
+                                    <!-- 2 column grid layout for inline styling -->
+                                    <div class="row mb-2">
+                                      <div class="col d-flex justify-content-center">
+                                        <!-- Checkbox -->
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                                          <label class="form-check-label" for="form2Example31"> Remember me </label>
+                                        </div>
+                                      </div>
+                                  
+                                      <div class="col">
+                                        <!-- Simple link -->
+                                        <a href="#!">Forgot password?</a>
+                                      </div>
+                                    </div>
+                                  
+                                    <!-- Submit button -->
+                                    <button type="button" class="btn btn-primary btn-block ">Sign in</button>
+                                  
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                      <p>Not a member? <a href="#!">Register</a></p>
+                                      <div class="container ">
+                                        <p>or sign up with:</p>
+                                        <button type="button" class="btn btn-link btn-floating text-white">
+                                          <i class="fab fa-facebook-f"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-floating text-white">
+                                          <i class="fab fa-google"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-floating text-white">
+                                          <i class="fab fa-twitter"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-floating text-white">
+                                          <i class="fab fa-github"></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                        </div>
+                        <i id="login" class="fa-solid fa-arrow-right-to-bracket fa-2x"></i></div>
+                        <span>
+                            <i id="cart" class="fa-solid fa-cart-plus fa-2x"></i>
+                        </span>
                 </div>
             </div>
 
@@ -58,7 +112,7 @@
 
         <!-- start of the main cntaint area of about us page -->
         <div class="container-fluid  d-flex justify-content-center">
-            <div class="container-fluid col-2 shadow p-4 text-dark ">
+            <!-- <div class="container-fluid col-2 shadow p-4 text-dark ">
                 <h6 class="text-center">Available Items</h6>
                 <div class="container-fluid  w-100 border text-start">
                     <a href="#" class="text-black text-start text-decoration-none ">All Items</a><br>
@@ -68,16 +122,18 @@
                     <a href="#" class="text-black text-start ">Kids</a><br>
                     <a href="#" class="text-black text-start ">Ladies wears</a><br>
                 </div>
-            </div>
+            </div> -->
             <div class="container-fluid b">
                 <div class="container text-center p-4 ">
                     <h1 >Available Items</h1>
                     <div class="container shadow mt-4">
                         <ul class="list-unstyled d-flex justify-content-around p-2 ">
-                            <li><a href="#" class="text-dark text-decoration-none">Electronics</a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">Ladies Wears</a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">mens wears</a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">kids</a></li>
+                            <li><a href="#" class="text-dark text-decoration-none ">Electronics<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Ladies Wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">mens wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">kids<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">kitchen<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                            <li><a href="#" class="text-dark text-decoration-none">Furnitures<i class="fa-solid fa-caret-down ml-2"></i></a></li>
                         </ul>
                     </div>
 
@@ -244,10 +300,8 @@
                                 <i class="fa-solid fa-star "></i>
                                 <i class="fa-solid fa-star "></i>
                             </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
+                           <div class="more"><a href="#">Shop now</a></div>                
                             <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
                         </div>
                     </div>
                     <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
@@ -328,10 +382,8 @@
                                 <i class="fa-solid fa-star "></i>
                                 <i class="fa-solid fa-star "></i>
                             </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
+                           <div class="more"><a href="#">Shop now</a></div>   
                             <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
                         </div>
                     </div>
                     <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
@@ -349,20 +401,11 @@
                                 <i class="fa-solid fa-star checked "></i>
                                 <i class="fa-solid fa-star checked"></i>
                             </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
+                           <div class="more"><a href="#">Shop now</a></div>              
                             <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                        
+                        </div>                   
                     </div>
-                   </div>
-
-                    
-                    
-                    
-                    
-                    
+                   </div>   
                 </div>
             </div>
           
@@ -435,6 +478,8 @@
             document.querySelector('.image').src=image;
         }
 
+
+
         
 
       
@@ -446,6 +491,14 @@
                 $('ul').toggleClass('active');
                 
             });
+
+            $('#login-button').click(function()
+            {
+                $('.login-form').toggleClass('active');
+
+            });
+
+            
 
         });
     </script>
