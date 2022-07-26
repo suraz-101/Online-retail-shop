@@ -257,6 +257,8 @@ input{
     
 }
 
+
+
 .maincontent
 {
     height: 100vh;
@@ -271,7 +273,7 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
- 
+/* position: relative; */
     
     
 }
@@ -779,6 +781,14 @@ del{
 {
     color: orange;
 }
+
+/* @media screen and (max-width:756px) {
+    .maincontent
+    {
+        height: auto;
+    }
+    
+} */
 
 @media screen and (max-width:900px)
   {

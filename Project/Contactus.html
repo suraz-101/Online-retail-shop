@@ -4,14 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
+    <title>Contact us page</title>
     <link rel="stylesheet" href="./css/landingpage.css">
+    <!-- <link rel="stylesheet" href="./css/contactus.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+  <style>
+
+   
+.contact
+    {
+       
+        width: 60%;
+        margin: auto;
+       background-color: rgb(168, 140, 42);
+        position: relative;
+        background-image: url(https://conteudo.imguol.com.br/c/noticias/f5/2020/11/19/cristolandia---google-maps---cracolandia-1605804141091_v2_4x3.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+        /* margin-top: 200px; */
+       
+    }
+
+    
+
+    /* .contact::before
+    {
+        background-color: #FFA500;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content:'';  
+    } */
+
+    .form-wrapper
+    {
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+.contact-form-wrapper
+{
+    
+    width:120%;
+    height: 60%;
+    /* height: 100% */
+    margin: auto;
+    position:absolute;
+    /* height: 100vh; */
+    background-color: aliceblue;
+    
+
+}
+
+.send-mail
+{
+    height: 50px;
+    width: 20%;
+    position: absolute;
+    bottom:-30px;
+    right: -20px;
+    box-shadow: 10px 10px 40px white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FFA500;
+    
+
+}
+
+
+
+.map{
+    /* position: absolute; */
+   height: 100%;
+    background-image: url(https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg);
+    background-size: cover;
+    /* width: 150%; */
+    
+    
+
+}
+
+.submit-btn{
+    background-color: #FFA500;
+}
+
+
+.map h4{
+     color: black;
+     text-decoration: none;
+     
+    /* text-decoration: none; */
+    text-shadow: 2px 2px 5px white;
+}
+
+
+
+
+    
+  </style>
 </head>
 <body>
     <div class="contianer">
@@ -112,178 +210,53 @@
 
         </div>
 
-        <div class="maincontent">
+        <div class="maincontent text-center ">
+            <div class=" contact ">
+                <div class="form-wrapper container   ">
+                    <div class="contact-form-wrapper container shadow  p-4  row h-sm-auto">
+                        <div class="contact-form container col-lg-8 col-md-12 col-sm-12 col-xs-12 ">
+                            <form class="row">
+                                <!-- Email input -->
+                                <div class="heading"><h5>Contact Us</h5></div>
+                                <div class="mb-4 col-lg-12 ">
+                                  <input type="Name" id="Name" class="form-control " placeholder="Enter Your Name Here..."/>
+                                </div>
+                                <!-- Password input -->
+                                <div class="mb-4 col-lg-12">
+                                  <input type="Email" id="email" class="form-control" placeholder="Enter Email Here..."/>
+                                </div>
 
-           <!-- start of the Slider  -->
-            <div class="slider">
-                <div class="slides">
-                    <div id="left-arrow" ></div>
-                    <div id="right-arrow" ></div>
+                                <!-- Message input -->
+                                <div class="mb-4 col-lg-12">
+                                    <input type="Message" id="message" class="form-control" placeholder="Enter Messagen Here ...." />
+                                  </div>
+                                <!-- Submit button -->
+                               <div class="col-lg-12"><button type="button" class="submit-btn btn btn-block col-lg-12 shadow">SEND MAIL</button></div> 
+                    
+                                <!-- Register buttons -->
+                                
+                              </form>
+                        </div>
+                        <!-- <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 map container shadow "></div> -->
+                        
+                            <a href="https://www.google.com/maps" class=" col-lg-4 col-md-12 col-sm-12 col-xs-12 mt-4  d-flex justify-content-center align-items-center "><div class="map container shadow"><h4>Map</h4></div></a>
 
-                    <div class="text-area">
-                        <h2>Let's grab the <br><span>opportunity</span> </h2><br>
-                        <p>Get high quality poroduct in resonable price</p>
-                        <p>Saving plus free shipping you can only get here.</p>
-                        <div class="buy-button">Buy now</div>
-                    </div>
-                    <div class="slide">
-                        <img class="image" src="./image/pods.png" alt="">
-                        <!-- <img class="image" src="./image/offer.png" alt="">
-                        <img class="image" src="./image/leatherbag.png" alt=""> -->
+                        
                         
                     </div>
-                    <div class="slide">
-                        
-                        <img class="image" src="./image/offer.png" alt="">
-                        
-                    </div>
-                    
-                    
-                   
-                    
-                    <div class="circles">
-                        <div class="circle active" onclick= "sliderchange('./image/pods.png')"></div>
-                        <div class="circle " onclick= "sliderchange('./image/offer.png')"></div>
-                        <div class="circle " onclick= "sliderchange('./image/leatherbag.png')"></div>
-                        <div class="circle "></div>
-                    </div>
-                    
+                    <!-- <div class="send-mail container text-white d-flex justify-content-center align-items-center "><h5>SEND MAIL</h5></div> -->
                 </div>
                
-            </div>
-
+                
+                </div>
+                
+           <!-- start of the Slider  -->
+           
             <!-- end of the slider -->
 
             <!-- start of the offered product slider -->
 
-            <div class="offers">
-                <div class="heading"> <h4>Offered Products</h4>
-                <div class="advertise"><h6>Limited time offer</h6></div>
-                </div>
-               
-                <div class="offer-products ">
-                    
-                    <div class=" product">
-                        <div class="offertag">50% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/Mobile-stand.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Mobile stand</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs. 350/- <del>Rs.700</del></h6></span>
-                            <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                        
-                    </div>
-                    
-                    <div class=" product">
-                        <div class="offertag">30% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/bag.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Hemp bag</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.1000/- <del>Rs.1435</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">20% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/converse shoes.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Converse Shoes</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.4800/- <del>Rs.6000</del></h6></span>
-                           <div class="more"><a href="Product.html">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">35% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/real-jersery.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Real Madrid Jersey</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.780/-<del>Rs.1200/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">50% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/scarf.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>100% Cashmere Scarf</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.5000/-<del>Rs.10000/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">30% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/mj-hat.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>MJ Hat</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.315/-<del>Rs.450/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">20% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section">
-                            <img class="image" src="./image/gloves.png" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Gloves </h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.960/-<del>Rs. 1200/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-
-                   
-                    
-                    
-                   
-                    
-                </div>
-            </div>
+            
 
             <!-- end of the offered product slider -->
           
@@ -367,6 +340,9 @@
             });
 
         });
+
+        
+        
     </script>
 </body>
 </html>

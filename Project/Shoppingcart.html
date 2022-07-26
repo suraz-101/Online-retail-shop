@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8 col-md-12">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
+    <title>cart</title>
     <link rel="stylesheet" href="./css/landingpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+
+ 
+
+  .cart-heading
+  {
+    border-bottom: 1px solid gray;
+    padding: 10px;
+  }
+  .submit-btn{
+    background-color: #FFA500;
+    color: white;
+}
   
+
+  
+
+
+    
+  </style>
 </head>
 <body>
     <div class="contianer">
@@ -112,182 +131,148 @@
 
         </div>
 
-        <div class="maincontent">
+        <div class="content text-center p-4 d-flex">
+        <div class="cart-wrapper container rounded row h-100 w-100 m-auto bg-white p-4 shadow">
+            <!-- starting of the lef-section -->
+            <div class="col-lg-8 col-md-12 container  h-100 w-100 ">
+                <!-- start of the heading section -->
+                <div class="cart-heading container d-flex justify-content-start">
+                   <span><i class="fa-solid fa-chevron-left"></i></span> 
+                </div>
+                <!-- end of the heading section -->
+                <!-- start  of the header section -->
+                <div class="container  d-flex justify-content-between align-items-center ">
+                    <div>
+                        <p>Shopping Cart</p>
+                        <p>You have 4 items in your cart</p>
+                    </div>
+                    <div >
+                        <p>Short by: Price</p>
+                    </div>
 
-           <!-- start of the Slider  -->
-            <div class="slider">
-                <div class="slides">
-                    <div id="left-arrow" ></div>
-                    <div id="right-arrow" ></div>
+                </div>
+                <!-- end of the header section -->
 
-                    <div class="text-area">
-                        <h2>Let's grab the <br><span>opportunity</span> </h2><br>
-                        <p>Get high quality poroduct in resonable price</p>
-                        <p>Saving plus free shipping you can only get here.</p>
-                        <div class="buy-button">Buy now</div>
-                    </div>
-                    <div class="slide">
-                        <img class="image" src="./image/pods.png" alt="">
-                        <!-- <img class="image" src="./image/offer.png" alt="">
-                        <img class="image" src="./image/leatherbag.png" alt=""> -->
+                <!-- start of of the product list section -->
+                <div class="product-list"></div>
+                    <div class="shadow container d-flex  p-2 row rounded mx-auto mt-4">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 border">
+                            <img  border" src="./image/bag.jpeg" height="65px" width="65px" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-5 col-xs-5">
+                            <h5>Hemp Bag</h5>
+                            <p>Hmep color</p>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 d-flex align-items-center" >
+                            <div style="width:30%"><h5  >2</h5></div>
+                            <div style="width: 50%"><h5  >Rs. 2900</h5></div>
+                        <div style="width: 30%"><a href="#"><i class="fa-solid fa-trash"></i></a></div>
+                        </div>
                         
+
                     </div>
-                    <div class="slide">
+                    <div class="shadow container d-flex  p-2 row rounded mx-auto mt-4">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 border">
+                            <img  border" src="./image/gloves.png" height="65px" width="65px" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-5 col-xs-5">
+                            <h5>Gloved</h5>
+                            <p>Black Color, Riding Gloves</p>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 d-flex align-items-center" >
+                            <div style="width:30%"><h5  >1</h5></div>
+                            <div style="width: 50%"><h5  >Rs. 1000</h5></div>
+                        <div style="width: 30%"><a href="#"><i class="fa-solid fa-trash"></i></a></div>
+                        </div>
                         
-                        <img class="image" src="./image/offer.png" alt="">
-                        
+
                     </div>
-                    
-                    
-                   
-                    
-                    <div class="circles">
-                        <div class="circle active" onclick= "sliderchange('./image/pods.png')"></div>
-                        <div class="circle " onclick= "sliderchange('./image/offer.png')"></div>
-                        <div class="circle " onclick= "sliderchange('./image/leatherbag.png')"></div>
-                        <div class="circle "></div>
+                    <div class="shadow container d-flex  p-2 row rounded mx-auto mt-4">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 border">
+                            <img  border" src="./image/mj-hat.jpeg" height="65px" width="65px" alt="">
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-5 col-xs-5">
+                            <h5>MJ Hat</h5>
+                            <p>Black color</p>
+                            
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 d-flex align-items-center" >
+                            <div style="width:30%"><h5  >1</h5></div>
+                            <div style="width: 50%"><h5  >Rs. 450</h5></div>
+                        <div style="width: 30%"><a href="#"><i class="fa-solid fa-trash"></i></a></div>
+                        </div>
+                        
+
                     </div>
                     
                 </div>
-               
-            </div>
 
-            <!-- end of the slider -->
+                <!-- end of the product list section -->
+            <!-- end of the lef-section -->
+            <div class="col-lg-4 color-navy rounded mt-sm-4 p-4 text-white ">
 
-            <!-- start of the offered product slider -->
+                <div class="container col-lg-12 d-flex justify-content-between align-items-center"><h4>Card Details</h4></div>
+                <div class="container col-lg-12 col-md-12 col-sm-12 col-xs-12 border p-2">
+                    <div class="col-12  d-flex justify-content-start">
+                        <h6>Card Type</h6>
+                    </div>
+                    <div class="col-12  d-flex  ">
+                        <i class="fa-brands fa-cc-mastercard fa-2x ml-2 shadow"></i>
+                        <i class="fa-brands fa-cc-visa fa-2x ml-2 shadow"></i>
+                        <i class="fa-brands fa-cc-paypal fa-2x  ml-2 shadow"></i>
 
-            <div class="offers">
-                <div class="heading"> <h4>Offered Products</h4>
-                <div class="advertise"><h6>Limited time offer</h6></div>
+                    </div>
+                    <div class="form">
+                        <form class="row p-4">
+                            <!-- Email input -->
+                           
+                            <div class="mb-4 col-lg-12 ">
+                              <input type="CHName" id="CHName" class="form-control " placeholder="Cardholder's Name"/>
+                            </div>
+                            <!-- Password input -->
+                            <div class="mb-4 col-lg-12">
+                              <input type="CNumber" id="CNumber" class="form-control" placeholder="Card Number"/>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="mb-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="Expiration" id="Expiration" class="form-control" placeholder="Expiration" />
+                              </div>
+
+                              <div class="mb-4 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <input type="CVV" id="CVV" class="form-control" placeholder="CVV" />
+                              </div>
+                           
+                            <!-- Register buttons -->
+                            
+                          </form>
+                    </div>
                 </div>
-               
-                <div class="offer-products ">
-                    
-                    <div class=" product">
-                        <div class="offertag">50% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/Mobile-stand.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Mobile stand</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs. 350/- <del>Rs.700</del></h6></span>
-                            <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                        
+                <div class="total  mt-4 ">
+                    <div class="col-12  d-flex justify-content-between align-items-center">
+                        <p>Subtotal</p>
+                        <p>Rs.4350/-</p>
                     </div>
-                    
-                    <div class=" product">
-                        <div class="offertag">30% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/bag.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Hemp bag</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.1000/- <del>Rs.1435</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
+                    <div class="col-12  d-flex justify-content-between align-items-center">
+                        <p>Shipping</p>
+                        <p>Rs.0.00/-</p>
                     </div>
-                    <div class=" product">
-                        <div class="offertag">20% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/converse shoes.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Converse Shoes</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.4800/- <del>Rs.6000</del></h6></span>
-                           <div class="more"><a href="Product.html">Shop now</a></div> 
-        
-                        </div>
-                      
+                    <div class="col-12  d-flex justify-content-between align-items-center">
+                        <p>Total</p>
+                        <p>Rs.4350/-</p>
                     </div>
-                    <div class=" product">
-                        <div class="offertag">35% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/real-jersery.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Real Madrid Jersey</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.780/-<del>Rs.1200/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">50% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/scarf.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>100% Cashmere Scarf</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.5000/-<del>Rs.10000/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">30% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/mj-hat.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>MJ Hat</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.315/-<del>Rs.450/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
-                    <div class=" product">
-                        <div class="offertag">20% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section">
-                            <img class="image" src="./image/gloves.png" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>Gloves </h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.960/-<del>Rs. 1200/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div>
+                </div>
+                <div>
+                    <div class="col-lg-12 "><button type="button" class="submit-btn btn btn-block col-lg-12 col-md-6 col-sm-6 col-xs-6 m-auto shadow d-flex justify-content-around align-items-center ">
+                       Check Out<i class="fa-solid fa-arrow-right"></i>
+                    </button></div> 
 
-                   
-                    
-                    
-                   
-                    
                 </div>
             </div>
-
-            <!-- end of the offered product slider -->
-          
            
+        </div>
 
         </div>
         
@@ -367,6 +352,9 @@
             });
 
         });
+
+        
+        
     </script>
 </body>
 </html>
