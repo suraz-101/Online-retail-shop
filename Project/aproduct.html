@@ -11,7 +11,46 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+ <style>
+
+     .container{
+         margin-top: 5%;
+     }
+     .container h5{
+         background-color:#1F4690 ;
+         width: 200px;
+         height: 41px;
+         color:white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         
+     }
+
+     .contianer h5::after{
+         content:'';
+         border-top: 41px solid #1F4690;
+         border-right: 41px solid transparent;
+         position: relative;
+         left:53px;
+
+     }
+
+     .product-section:hover
+      {
+          box-shadow: 3px 3px 10px gray;
+      }
+
+
+      .product-top img{
+          
+          border: 1px solid silver;
+          text-align: center;
+          height: 230px;
+          /* width: 100%; */
+      }
+   
+ </style>
 </head>
 <body>
     <div class="contianer">
@@ -101,7 +140,7 @@
                         <li><a href="./Services.html">Our Services</a></li>
                         <li><a href="./Contactus.html">Contact us</a></li>
                         <li><a href="./aproduct.html">Available Items</a></li>
-                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="./NewArrival.html">New Arrivals</a></li>
                     </ul>
                 </div>
                 <div class="shop-button">
@@ -112,309 +151,270 @@
 
         </div>
 
+        <div class="container ">
+            <h5 >Available Items</h5>
+            <div class=" product-nav container shadow my-4">
+                <ul class=" links list-unstyled d-flex justify-content-around p-2 ">
+                    <li><a href="#" class="text-dark text-decoration-none ">Electronics<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Ladies Wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">mens wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">kids<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">kitchen<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                    <li><a href="#" class="text-dark text-decoration-none">Furnitures<i class="fa-solid fa-caret-down ml-2"></i></a></li>
+                </ul>
+                
+            </div>
+            <div class="categories container">
+                <ul class=" list-unstyled text-decoration-none text-dark w-25">
+                    <li class="all "><a href="#" class="text-dark ">Categories<i class="fa-solid fa-caret-down ml-2 "></i></a>
+                        <ul class="sublinks list-unstyled text-decoration-none  ">
+                            <li ><a href="#" class="text-white text-decoration-none  ">Electronics <i class="fa-solid fa-caret-right ml-2 "></i></a>
+                                <ul class="sub-sub-links list-unstyled text-decoration-none  ">
+                                    <li ><a href="#" class="text-white text-decoration-none  ">Kitchen </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Mobile Accessories </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Smart Phones</a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">kids </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">kitchen </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Furnitures </a></li>
+                                </ul>
+                            </li>
+                            <li ><a href="#" class="text-white text-decoration-none">Ladies Wears <i class="fa-solid fa-caret-right ml-2 "></i></a></li>
+                            <li ><a href="#" class="text-white text-decoration-none">mens wears <i class="fa-solid fa-caret-right ml-2 "></i></a>
+                                <ul class="sub-sub-links list-unstyled text-decoration-none  ">
+                                    <li ><a href="#" class="text-white text-decoration-none  ">Shoes </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">bags</a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Clothings </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">accessories </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Boys Fashion </a></li>
+                                    <li ><a href="#" class="text-white text-decoration-none">Furnitures </a></li>
+                                </ul>
+                            </li>
+                            <li ><a href="#" class="text-white text-decoration-none">kids <i class="fa-solid fa-caret-right ml-2 "></i></a></li>
+                            <li ><a href="#" class="text-white text-decoration-none">kitchen <i class="fa-solid fa-caret-right ml-2 "></i></a></li>
+                            <li ><a href="#" class="text-white text-decoration-none">Furnitures <i class="fa-solid fa-caret-right ml-2 "></i></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="row container-fluid m-4 border d-flex justify-content-center ">
+                <div class=" product-section rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4     ">
+                    <div class=" container  product-top">
+                        <img  src="./image/bag.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Hemp Bag</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4   ">
+                    <div class=" container product-top ">
+                        <img  src="./image/mj-hat.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>MJ Hat</h6></span>
+                            <span><h6 >Rs.450/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/gloves.png " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Gloves</h6></span>
+                            <span><h6 >Rs.1000/-</h6></span> 
+                    </div>
+
+                </div>
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/Mobile-stand.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Scarf</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+                <div class=" product-section rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container  product-top">
+                        <img  src="./image/bag.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Hemp Bag</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/mj-hat.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>MJ Hat</h6></span>
+                            <span><h6 >Rs.450/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/gloves.png " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Gloves</h6></span>
+                            <span><h6 >Rs.1000/-</h6></span> 
+                    </div>
+
+                </div>
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/Mobile-stand.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Scarf</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+                <div class=" product-section rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container  product-top">
+                        <img  src="./image/bag.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Hemp Bag</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/mj-hat.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>MJ Hat</h6></span>
+                            <span><h6 >Rs.450/-</h6></span> 
+                    </div>
+
+                </div>
+
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/gloves.png " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Gloves</h6></span>
+                            <span><h6 >Rs.1000/-</h6></span> 
+                    </div>
+
+                </div>
+                <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 mt-4 ">
+                    <div class=" container product-top">
+                        <img  src="./image/Mobile-stand.jpeg " height="100%" width="100%" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <div class="col-12 p-2 ">
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star checked"></i>
+                            <i class="fa-solid fa-star "></i>
+                        </div> 
+                        <span><h6>Scarf</h6></span>
+                            <span><h6 >Rs.5000/-</h6></span> 
+                    </div>
+
+                </div>
+                
+                
+            </div>
+        </div>
 
         <!-- start of the main cntaint area of about us page -->
-        <div class="container-fluid  d-flex justify-content-center">
-            <!-- <div class="container-fluid col-2 shadow p-4 text-dark ">
-                <h6 class="text-center">Available Items</h6>
-                <div class="container-fluid  w-100 border text-start">
-                    <a href="#" class="text-black text-start text-decoration-none ">All Items</a><br>
-                    <a href="#" class="text-black text-start ">Electronics</a><br>
-                    <a href="#" class="text-black text-start ">Ladies wears</a><br>
-                    <a href="#" class="text-black text-start ">Mens Wears</a><br>
-                    <a href="#" class="text-black text-start ">Kids</a><br>
-                    <a href="#" class="text-black text-start ">Ladies wears</a><br>
-                </div>
-            </div> -->
-            <div class="container-fluid b">
-                <div class="container text-center p-4 ">
-                    <h1 >Available Items</h1>
-                    <div class="container shadow mt-4">
-                        <ul class="list-unstyled d-flex justify-content-around p-2 ">
-                            <li><a href="#" class="text-dark text-decoration-none ">Electronics<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">Ladies Wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">mens wears<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">kids<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">kitchen<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                            <li><a href="#" class="text-dark text-decoration-none">Furnitures<i class="fa-solid fa-caret-down ml-2"></i></a></li>
-                        </ul>
-                    </div>
-
-                    
-                </div>
-                <div class="container mt-2 p-4 d-flex flex-wrap justify-content-center">
-
-                   <div class="row  d-flex justify-content-center align-items-center ">
-                    <!-- <div class=" product">
-                        <div class="offertag">50% off
-                            <div class="small-circle"></div>
-                        </div>
-                        <div class="image-section ">
-                            <img class="image" src="./image/scarf.jpeg" alt="">
-                        </div>
-                        <div class="image-content">
-                            <span><h6>100% Cashmere Scarf</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6>Rs.5000/-<del>Rs.10000/-</del></h6></span>
-                           <div class="more"><a href="#">Shop now</a></div> 
-        
-                        </div>
-                      
-                    </div> -->
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4 "> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/bag.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Hemp Bag</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.5000/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img  src="./image/gloves.png" height="90%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Gloves</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.1000/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/mj-hat.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>MJ Hat</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.420/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/t-shirt.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>T-shirt</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.550/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/bag.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Hemp Baf</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.1435/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/dumbell.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Dumbell</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.2999/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked "></i>
-                                <i class="fa-solid fa-star checked"></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                        
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/bag.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Hemp bag</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.1435/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div>                
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/gloves.png" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Gloves</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.1000/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/mj-hat.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>MJ Hat</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.420/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/t-shirt.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>T-shirt</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.550/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div> 
-                            
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/bag.jpeg" height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Hemp Bag</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.1435/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star "></i>
-                                <i class="fa-solid fa-star "></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div>   
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-                        </div>
-                    </div>
-                    <div class="card border col-sm-6 col-md-5 col-lg-4 col-xl-3 rounded shadow m-4"> 
-                        <div class="container w-100 h-75 ">
-                            <img src="./image/dumbell.jpeg"   height="100%" width="100%" alt="">
-                        </div>
-                        <div class="contianer w-100 h-50  text-center image-content">
-                            <span><h6>Dumbell</h6></span>
-                            <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, ipsam.</p></span>
-                            <span><h6 >Rs.2999/-</h6></span>
-                            <div class="col-12 p-2 ">
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked"></i>
-                                <i class="fa-solid fa-star checked "></i>
-                                <i class="fa-solid fa-star checked"></i>
-                            </div> 
-                           <div class="more"><a href="#">Shop now</a></div>              
-                            <!-- <div class="container col-4 bg-primary rounded mb-2 text-white shadow cursor-pointer ">More</div> -->
-                        </div>                   
-                    </div>
-                   </div>   
-                </div>
-            </div>
-          
-
-
-        </div>
+      
 
         <!-- end of about us page -->
         

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us page</title>
+    <title>landing page</title>
     <link rel="stylesheet" href="./css/landingpage.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -12,39 +12,45 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-      *
-      {
-          padding: 0px;
-          margin:0px;
-          box-sizing: border-box;
-      }
 
-      p{
-        font-family: 'Courier New', Courier, monospace;
+      .container{
+          margin-top: 5%;
       }
-      
-
-      .heading h1{
-          background-color:#1F4690 ;
-          height: 50px;
+      .container h5{
+          background-color: #1F4690;
+          padding: 5px 10px;
+          height: 42px;
           width: 200px;
-          
+          color: white;
       }
 
-      .heading h1::after
+      .container h5::after
       {
           content:'';
-          border-top: 50px solid #1F4690;
-          border-right: 50px solid transparent;
-          /* border-bottom: 50px solid #1F4690; */
+          border-top: 42px solid #1F4690;
+          border-right:42px solid transparent;
           position: relative;
-          left: 125px;
-          top: 2px;
+          left: 78px;
+          top: 37px;
+      }
+
+      .product-section:hover
+      {
+          box-shadow: 3px 3px 10px gray;
+      }
+
+
+      .product-top img{
+          
+          border: 1px solid silver;
+          text-align: center;
+          height: 230px;
+          /* width: 100%; */
       }
   </style>
 </head>
 <body>
-    <div class="contianer ">
+    <div class="contianer">
         <div class="navwrapper">
             <div class="header">
                 <div class="logo">
@@ -142,93 +148,90 @@
 
         </div>
 
+        <!-- end of the nav section -->
 
-        <!-- start of the main cntaint area of about us page -->
-        <div class="container-fluid  m-5">
-            <div class="heading py-2 px-4 text-center text-white"><h1 >About us </h1></div>
-            <div class="container  ">
-                <div class="row text-center text-black d-flex p-4 border rounded my-4">
-                    <div class="col-sm-12 col-md-12 col-lg-6  ">
-                        <h4 class="text-center p-2">Who you are?</h4>
-                        <p class="text-center"> Write about your comapny and when it was found. write why people can trust you. tell your prospoect how you got started, how far you have came,
-                            as well as everything  your e-commercebusiness has accomplished along wiht the way.
-                        </p>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 text-center my-4" style="z-index: -1;">
-                        <img  class="shadow" src="./image/whoyou.jpeg"   height="200px" width="400px" alt="" style="z-index: -1;">
-                    </div>
-                </div>
-                <div class="row text-center d-flex mt-4  p-4 mb-4">
-                    <div class="col-sm-12 col-md-12 col-lg-6 text-center my-4 ">
-                        <img class="shadow" src="./image/whyus.jpeg"  height="200px" width="400px"  alt="">
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 my-4 ">
-                        <h4 class="text-center p-2 ">Why choose you?</h4>
-                        <p class="text-center"> Write about your comapny and when it was found. write why people can trust you. tell your prospoect how you got started, how far you have came,
-                            as well as everything  your e-commercebusiness has accomplished along wiht the way.
-                        </p>
-                    </div>
-                   
-                </div>
-               
+        <div class="container ">
 
-            </div>
-            
+           
+                <h5>New Arrivals</h5>
 
-           <div class="container-fluid  d-flex justify-content-center align-items-center mt-4" >
-              <div class="row d-flex justify-content-center align-items-center">
-
-                <div class=" container-fluid col xs-7 col-sm-7 col-md-5 col-lg d-flex rounded shadow m-4">
-                    <i class="fa-solid fa-users-line fa-2x mt-4  " ></i>
-                    <div class="contianer ml-4 mt-2">
-                        <h6 >Consumer served</h6>
-                        <h2>700,000+</h2>
-                    </div>
-                </div>
-                <div class=" container-fluid col xs-7 col-sm-7 col-md-5 col-lg d-flex rounded shadow m-4">
-                    <i class="fa-solid fa-users-line fa-2x mt-4  " ></i>
-                    <div class="contianer ml-4 mt-2">
-                        <h6 >Consumer served</h6>
-                        <h2>700,000+</h2>
-                    </div>
-                </div>
-                <div class=" contianer-fluid col xs-7 col-sm-7 col-md-5 col-lg d-flex rounded shadow m-4">
-                    <i class="fa-solid fa-users-line fa-2x mt-4  " ></i>
-                    <div class="contianer ml-4 mt-2">
-                        <h6 >Consumer served</h6>
-                        <h2>700,000+</h2>
-                    </div>
-                </div>
-                
-                   <!-- <div class="container mr-4 border rounded shadow ">
-                    <div class="container mr-4 d-flex ">
-                        <i class="fa-solid fa-city fa-2x mt-4  " ></i>
-                        <div class="contianer ml-4 mt-2">
-                            <h6 >Cities</h6>
-                            <h2>40+</h2>
+                <div class="row container border border-dark my-4 d-flex justify-content-around align-items-center">
+                    <div class=" product-section rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 my-4     ">
+                        <div class=" container  product-top">
+                            <img  src="./image/bag.jpeg " height="100%" width="100%" alt="">
                         </div>
-                       </div>
-                   </div>
-                   <div class="container mr-4 border rounded shadow ">
-                    <div class="container  mr-4">
-                        <div class="container mr-4 d-flex ">
-                            <i class="fa-brands fa-opencart fa-2x mt-4  " ></i>
-                            <div class="contianer ml-4 mt-2">
-                                <h6 >Items availabe</h6>
-                                <h2>1000+</h2>
-                            </div>
-                           </div>
-                       </div>
-                   </div> -->
-              </div>
-           </div>
+                        <div class="content text-center">
+                            <div class="col-12 p-2 ">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </div> 
+                            <span><h6>Hemp Bag</h6></span>
+                                <span><h6 >Rs.5000/-</h6></span> 
+                        </div>
+    
+                    </div>
 
-
+                    <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 my-4 ">
+                        <div class=" container product-top">
+                            <img  src="./image/gloves.png " height="100%" width="100%" alt="">
+                        </div>
+                        <div class="content text-center">
+                            <div class="col-12 p-2 ">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </div> 
+                            <span><h6>Gloves</h6></span>
+                                <span><h6 >Rs.1000/-</h6></span> 
+                        </div>
+    
+                    </div>
+                    <div class=" product-section   rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 my-4 ">
+                        <div class=" container product-top">
+                            <img  src="./image/Mobile-stand.jpeg " height="100%" width="100%" alt="">
+                        </div>
+                        <div class="content text-center">
+                            <div class="col-12 p-2 ">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </div> 
+                            <span><h6>Scarf</h6></span>
+                                <span><h6 >Rs.5000/-</h6></span> 
+                        </div>
+    
+                    </div>
+                    <div class=" product-section rounded col-lg-3 col-md-4 col-sm-5 col-xs-8 my-4 ">
+                        <div class=" container  product-top">
+                            <img  src="./image/bag.jpeg " height="100%" width="100%" alt="">
+                        </div>
+                        <div class="content text-center">
+                            <div class="col-12 p-2 ">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star "></i>
+                            </div> 
+                            <span><h6>Hemp Bag</h6></span>
+                                <span><h6 >Rs.5000/-</h6></span> 
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            
         </div>
-
-        <!-- end of about us page -->
         
 
+        
         <!-- start of the footer section -->
        
         <div class="footer-section">
