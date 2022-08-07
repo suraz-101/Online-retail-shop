@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
     /* overflow-x: hidden; */
 }
 /* .navwrapper
@@ -60,7 +61,7 @@
 
 .search-bar
 {
-    background-color: #1F4690;
+    background-color: black;
     border-radius: 5px;
     display: flex;
     width: 80%;

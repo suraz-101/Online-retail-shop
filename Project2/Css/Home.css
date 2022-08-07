@@ -1,0 +1,300 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* overflow-x: hidden; */
+    
+}
+.navbar-wrapper
+{
+    background-color:  #dbf1ff;
+    /* position: fixed; */
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.navbar h5 span{
+    color: coral;
+}
+
+.navbar .search input{
+    border: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 5px 0 0 5px ;
+
+}
+
+
+
+
+.navbar .search-btn
+{
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    
+}
+
+
+
+.navbar .shop-cart .cart{
+color: #303030;
+position: relative;
+
+
+}
+
+.navbar .shop-cart .count
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: darkgreen;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-nav .links-wrapper .links{
+    width: 100%;
+    
+
+}
+
+.second-nav
+{
+    background-color: white;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dbf1ff;
+}
+
+.second-nav .links-wrapper 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.second-nav .links a
+{
+    color: gray;
+    text-decoration: none;
+}
+
+.second-nav .links a.active{
+    color: #303030;
+}
+
+.buttons .login-btn
+{
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+.hamburger
+{
+    display: none;
+}
+
+.navbar .second-nav .links-wrapper ul
+{
+    display: none;
+}
+
+.content-area
+{
+    background-color: #FAFAFA;
+}
+
+
+.card
+{
+    height: 400px;
+    position: relative;
+   
+}
+.card:hover{
+    box-shadow: 3px 3px 10px gray;
+}
+.product-image
+{
+    height: 70%;
+}
+.product-content
+{
+    background-color: #dbf1ff;
+    height: 30%;
+   
+}
+
+del{
+    color: lightslategray;
+}
+
+.checked
+{
+    color: coral;
+}
+
+.product-content h6{
+    font-weight: bold;
+}
+
+#overlay
+{
+   
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+   
+
+   
+}
+
+.card:hover #overlay{
+display: block;
+display: flex;
+justify-content: center;
+align-items: center;  
+
+
+
+}
+
+.box
+{
+    width: 100%;
+}
+
+
+
+.box ul{
+    width: 100%;
+}
+
+.box i{
+    color: white;
+    
+}
+
+.box i:hover{
+    transform: scale(2,2);
+    transition: all 0.2s ease-in-out ;
+    /* box-shadow: 2px 2px 5px white; */
+}
+
+
+.footer-wrapper 
+{
+    background-color: #dbf1ff;
+   
+    /* height: 500px; */
+}
+ul li h6{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ ul{
+    line-height: 30px;
+    list-style: none;
+}
+ ul li a{
+    color: gray;
+    text-decoration: none;
+
+}
+
+
+
+.footer-buttom
+{
+    background-color: white;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #dbf1ff;
+}
+
+.sublinks
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.facebook i
+{
+    color:  #17A9FD;
+}
+
+.twitter i{
+    color: #1D9BF0;
+}
+
+.instagram i{
+   color:  #e6683c; 
+
+
+}
+
+.youtube i{
+    color:#FF0000;
+}
+
+.find-btn
+{
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  
+  
+
+
+
+    .hamburger{
+        display: block;
+    }
+    
+}
