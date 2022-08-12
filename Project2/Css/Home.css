@@ -115,6 +115,7 @@ position: relative;
     
 }
 
+
 .hamburger
 {
     display: none;
@@ -139,6 +140,8 @@ position: relative;
 }
 .card:hover{
     box-shadow: 3px 3px 10px gray;
+    /* transform: scale(1.1,1.1);
+    transition: all 0.2s ease-in-out; */
 }
 .product-image
 {
@@ -150,6 +153,7 @@ position: relative;
     height: 30%;
    
 }
+
 
 del{
     color: lightslategray;
@@ -283,6 +287,94 @@ ul li h6{
 }
 
 
+.header h5
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    padding-left: 20px;
+   
+}
+
+.product-details
+{
+    background-color: #dbf1ff;
+}
+
+.header h6,.product-details p{
+    color: gray;
+    padding-right: 20px;
+}
+.product-details .color-pick
+{
+    padding: 20px 0px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+}
+
+.size-pick,.buttons
+{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.size-pick  .select
+{
+    outline: none;
+    /* border: 1px solid red; */
+}
+.product-details .buttons{
+    border-bottom: 1px solid gray;
+    
+}
+
+.buttons .button
+{
+    background-color: coral;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+.buttons .button i{
+    padding-right: 8px;
+    
+}
+
+.product-details .info-buttons a{
+    color: #303030;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.product-details .info-buttons a:hover{
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,11 +382,38 @@ ul li h6{
 @media screen and (max-width: 900px) {
   
   
-
+    
+.second-nav ul
+{
+    position: absolute;
+    background-color:#dbf1ff ;
+    top: 12px;
+    right: 120%;
+    z-index: 5;
+    height: 100vh;
+    display: block;
+    width: 100%;
+   text-align: center;
+   overflow: hidden;
+  transition: all 1s ease-in-out;
+}
 
 
     .hamburger{
         display: block;
+    }
+
+    .second-nav
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .second-nav .links.active{
+        display: block;
+        right: 0%;
+        list-style: 20px;
     }
     
 }

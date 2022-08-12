@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="./Css/Home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -65,9 +65,56 @@
 
     <!-- start of the content area -->
     
-    <div class="contianer content-area">
-        <div class="container row m-auto text-center">
-            <div class=" product-card col-lg-3 col-md-4 col-sm-10 mt-4">
+    <!-- start of the related product area -->
+    <div class="contianer content-area py-4  ">
+        <div class="container mt-4 py-3 row m-auto border">
+            <div class="col-lg-7 col-md-12 col-sm-12">
+                <img src="./images/shoes.jpeg" alt="" width="100%" height="600px">
+            </div>
+            <div class=" product-details col-lg-5 col-md-12 col-sm-12  ">
+                <div class="product-info mt-3">
+                    <p >Mens > Shoes > Sneaker</p>
+                <h4>New Brand Sneaker Shoes</h4>
+                <p>Rs.1000</p>
+                </div>
+                <div class="color-pick ">
+                    <h6>Color:</h6>
+                </div>
+                <div class="size-pick row m-auto">
+                    <select class="select col-lg-3 col-md-3 col-sm-3" >
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                        <!-- <option>Select Size</option> -->
+                    </select>
+                   
+                    <input class="px-2 col-lg-3 col-md-3 col-sm-3" type="number"  placeholder="Qty." >
+                </div>
+                <div class="buttons ">
+                    <button class="button"> <i class="cart fa-brands fa-opencart"></i> Add to Cart</button>
+                    <button class="button"><i class="fa-solid fa-heart"></i>wishlist</button>
+                </div>
+                <div class="details py-4">
+                    <h6>Product Details</h6>
+                    <p>  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, molestiae?</p>
+                </div>
+                <div class="info-buttons d-flex justify-content-between ">
+                    <p>Delivery & Returns:<a href="">More Details</a></p>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            
+        </div>
+       <div class="container  py-3 border">
+        <div class="header row container m-auto text-center d-flex justify-content-between align-items-center ">
+            <h5>Related Product</h5>
+            <h6>View More</h6>
+        </div>
+        <div class="container row m-auto text-center d-flex">
+            <div class=" product-card col-lg-3 col-md-4 col-sm-6 mt-4">
                 <div class="  card ">
                     <div id="overlay">
                         <div class="box">
@@ -98,7 +145,7 @@
                     
                 </div>
             </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4 ">
+            <div class="product-card col-lg-3 col-md-4 col-sm-6 mt-4 ">
                 <div class="  card">
                     <div id="overlay">
                         <div class="box">
@@ -128,7 +175,7 @@
                     
                 </div>
             </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
+            <div class="product-card col-lg-3 col-md-4 col-sm-6 mt-4">
                 <div class="  card">
                     <div id="overlay">
                         <div class="box">
@@ -159,7 +206,7 @@
                     
                 </div>
             </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
+            <div class="product-card col-lg-3 col-md-4 col-sm-6 mt-4">
                 <div class="  card">
                     <div id="overlay">
                         <div class="box">
@@ -189,192 +236,15 @@
                     
                 </div>
             </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img src="./images/hand-bangle.jpeg" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Stainless Stell Bracelet</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.400</p>
-                            <del><p>Rs.650</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star "></i>
-                            <i class="fa-solid fa-star "></i>
-                        </div> 
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img src="./images/mobile-case.jpeg" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Mobile Green Silicon Case</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.400</p>
-                            <del><p>Rs.650</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star "></i>
-                            <i class="fa-solid fa-star "></i>
-                        </div> 
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img src="./images/apple-watch.png" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Apple Watch Band</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.2000</p>
-                            <del><p>Rs.2800</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star "></i>
-                            <i class="fa-solid fa-star "></i>
-                        </div> 
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img src="./images/sunscream.jpeg" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Apple Watch Band</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.2000</p>
-                            <del><p>Rs.2800</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star "></i>
-                            <i class="fa-solid fa-star "></i>
-                        </div> 
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img src="./images/shoes.jpeg" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Sneaker Shoes</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.1000</p>
-                            <del><p>Rs.2000</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star "></i>
-                        </div> 
-                        
-                    </div>
-                   
-                    
-                </div>
-            </div>
-            <div class="product-card col-lg-3 col-md-4 col-sm-10 mt-4">
-                <div class="  card">
-                    <div id="overlay">
-                        <div class="box">
-                            <ul class="d-flex justify-content-around align-items-center">
-                                <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                                <li><a href="#" class="cart-btn"><i class="fa-brands fa-opencart"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-square-share-nodes"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="product-image "><img   src="./images/Headphone.png" alt="" height="100%" width="100%"></div>
-                    <div class="product-content container pt-3  ">
-                        <div class="product-name"><h6>Head Phone</h6></div>
-                        <div class="price  d-flex justify-content-between align-items-center">
-                            <p>Rs.2000</p>
-                            <del><p>Rs.28000</p></del>
-                        </div>
-                        <div class=" rating p-2  text-center ">
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                            <i class="fa-solid fa-star checked"></i>
-                        </div> 
-                        
-                    </div>
-                   
-                    
-                </div>
-            </div>
+            
+            
            
            
         </div>
+       </div>
     </div>
+    <!-- end of the related product area section -->
+
     <!-- End of the content area -->
 
 
