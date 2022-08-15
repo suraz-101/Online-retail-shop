@@ -361,11 +361,32 @@ ul li h6{
     color: gray;
 }
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
+.product-review .header h6{
+    font-size: 12px;
+}
+.product-review
+{
+    background-color: white;
+    margin-top: 8px;
+    /* box-shadow: 1px 1px 6px gray; */
+}
 
+.product-review p{
+    font-size: 15px;
+}
 
-
+.related-product
+{
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
 
 
 
