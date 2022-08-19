@@ -37,4 +37,4 @@
 
 9.  This is the database diagram of online retail shop
 
-![dbms](./Assignment/Wireframe/Database_diagram.png)
+![dbms](./Assignment/Wireframe/Database.png)
