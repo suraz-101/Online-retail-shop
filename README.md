@@ -34,3 +34,7 @@
 8. This is Contact us page of  online retail shop 
 
 ![Contact-us](./Assignment/Wireframe/Contact%20us%20page.png)
+
+9.  This is the database diagram of online retail shop
+
+![Contact-us](./Assignment/Wireframe/DATABASE_DIAGRAM.png)
