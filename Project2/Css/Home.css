@@ -397,7 +397,23 @@ ul li h6{
 
 
 
+.quantity .button{
+    height: 30px;
+    width: 30px;
+    outline: none;
+    border: none;
+    background-color: coral;
+    color: white;
+    font-size: 20px;
+   
+    
+}
 
+.quantity  h5
+{
+    margin: 0 20px;
+    font-size: 15px;
+}
 
 
 @media screen and (max-width: 900px) {
