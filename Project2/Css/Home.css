@@ -45,7 +45,19 @@
     
 }
 
+.navbar .shop-cart
+{
+    display: flex;
 
+}
+
+.navbar .shop-cart .user
+{
+    color: #303030;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
 
 .navbar .shop-cart .cart{
 color: #303030;
