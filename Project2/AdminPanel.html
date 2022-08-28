@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./Css/admin.css">
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="adminpanel">
+        <div class="dashboard">
+            <div class="logo">
+                <h2>Admin</h2>
+                <span><i class="fa-solid fa-bars" id="hamburger"></i></span>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span class="name">Customer</span>
+                            <div class="secondary">Customer</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="name">Products</span>
+                            <div class="secondary">Prducts</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span class="name">Orders</span>
+                            <div class="secondary">Orders</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-receipt"></i>
+                            <span class="name">Inventory</span>
+                            <div class="secondary">Inventory</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <span class="name">Account</span>
+                            <div class="secondary">Account</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content ">
+           <div class="navbar container-fluid ">
+            <div class="logo col-lg-2 col-md-3 col-sm-12 col-xs-12 text-dark  d-flex justify-content-center align-items-center ">
+                <h5>Online 
+                    <span> Retail</span></h5>
+            </div>
+            <div class="search-bar col-lg-7 col-md-6 col-sm-9 col-xs-9 text-center d-flex justify-content-center ">
+                <div class=" search col-lg-10 col-md-10 col-sm-10 col-xs-10 d-flex  ">
+                    <input type="text" placeholder=" Search Product Here..." class="col-lg-10 border">
+                    <button class="search-btn col-lg-2 col-md-2 col-sm-2 col-xs-2"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                </div>
+            </div>
+            <div class="icons col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center justify-content-around  ">
+                <div class="user border">
+                    <a href="#" >
+                        <img src="./images/benzema.jpeg" alt="" width="25px" height="25px">
+                        <span class="username text-dark pl-2">Surazz </span></a>
+                    </div>
+                <i class=" bell fa-solid fa-bell"><div class="count">0</div></i> 
+                <i class="setting fa-solid fa-gear"></i>
+            </div>
+            
+           </div>
+           <div class="container mt-4 "><h5>Dashboard</h5></div>
+           <div class="short-cut container border p-2 d-flex mt-2  ">
+               
+               <div class="activites  col-lg-4 ">
+                   <div class=" container border  ">
+                    <div>
+                        <h4>Total Customers</h4>
+                        <h3>20,000</h3>
+                        <p>Increased by 10%</p></div>
+                    <div class="icon d-flex align-items-center pl-4"><i class="fa-regular fa-user-group"></i>
+                    </div>
+                   </div>
+               </div>
+               <div class="activites col-lg-4 ">
+                <div class=" container border  ">
+                    <div>
+                        <h4>Daily Visitors</h4>
+                        <h3>135</h3>
+                        <p>Increased by 3%</p></div>
+                    <div class="icon d-flex align-items-center pl-4"><i class="fa-solid fa-eye"></i>
+                    </div>
+                   </div>
+                </div>
+                <div class="activites col-lg-4 ">
+                    <div class=" container border  ">
+                        <div>
+                            <h4>New Messages</h4>
+                            <h3>20</h3>
+                             <p>Increased by 20%</p></div>
+                        <div class="icon d-flex align-items-center pl-4"><i class="fa-regular fa-message"></i>
+                        </div>
+                       </div>
+                </div>
+                
+               
+
+           </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function()
+        {
+            $('#hamburger').click(function()
+            {
+                $('.dashboard').toggleClass('active');
+                $('.content').toggleClass('activate');
+            })
+
+        });
+    </script>
+</body>
+</html>
