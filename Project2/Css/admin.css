@@ -20,6 +20,8 @@
     height: 100%;
     background-color: #dbf1ff;
     z-index: 99;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
 
 .adminpanel .logo
@@ -37,6 +39,8 @@
     list-style: none;
     margin-top: 1rem;
     padding-left: 0.5rem;
+    
+    /* position: relative; */
     
 }
 .adminpanel .menu ul .search 
@@ -61,6 +65,7 @@
 {
    
     display: none;
+    
       
 }
 
@@ -80,10 +85,11 @@
     width: 100px;
     transform: translateY(-50%);
     transition: all 0.5s ease-in-out;
-    
+    /* border: 1px solid black; */
 
     
 }
+
 
 .adminpanel .menu ul li a .name
 {
@@ -200,7 +206,6 @@ adminpanel .menu ul .search
 
 .adminpanel .content .navbar  .icons i{
    font-size: 25px;
-
     color: #303030;
     opacity: 0.6;
     position: relative;
@@ -315,18 +320,37 @@ adminpanel .menu ul .search
 
 .adminpanel .content .short-cut .activites .container:hover
 {
-    
     background-color:#3B76EF ;
     color: white;
     transition: all 0.2s ease-in-out;
-    
-
 }
 
 .adminpanel .content .short-cut .activites:hover{
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
+
+/* .adminpanel .dashboard .menu ul li{
+    
+    position: relative;
+    
+}
+
+.adminpanel .dashboard .menu ul li .sublinks
+{
+    top: 0px;
+    left: 60px;
+    display: none;
+    width: 200px;
+    
+}
+
+.adminpanel .dashboard .menu ul li:hover .sublinks
+{
+    display: block;
+    transition: all 0.3s ease-in-out;
+} */
+
 
 @media screen and (max-width:768px)
 {
