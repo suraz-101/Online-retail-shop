@@ -429,7 +429,7 @@ ul li h6{
  /* for login form */
 .content-area .form-container
 {
-    height: 600px;
+    /* height: 600px; */
     width: 400px;
 
 }
@@ -454,17 +454,23 @@ ul li h6{
 }
 .content-area .form-container .form-content
 {
-    height: calc(600px - 100px);
+    /* height: calc(600px - 100px); */
     background-color: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     border-radius: 10px;
     /* line-height: 00px; */
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .content-area .form-container .form-content .input-fields
 {
-    height: 100px;
+    height: 80px;
     padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid #dbf1ff; */
+    padding-left: 20px;
     
     
 }
@@ -473,19 +479,22 @@ ul li h6{
 .content-area .form-container .form-content .input-fields input
 {
    
-    font-size: 20px;
+    font-size: 18px;
     margin: auto;
     color: #555555;
     line-height: 1.2;
     display: block;
-    width: 90%;
-    height: 50px;
+    width: 70%;
+    height: 40px;
     background: transparent;
-    padding: 0 10px 0 80px;
+    padding: 0 10px 0 20px;
     border-radius: 20px;
     outline: none;
-    border:1px solid #dbf1ff;
+    border: 1px solid #dbf1ff;
+    
+    
 } 
+
 
 .content-area .form-container .form-content .buttons{
    display: flex;
@@ -502,7 +511,11 @@ ul li h6{
     height: 50px;
     border: 1px solid gray;
 }
-.content-area .form-container .form-content .medias .icons i{
+.content-area .form-container .form-content .medias .icons
+{
+    padding-top: 25px;
+}
+.content-area .form-container .form-content .medias .icons i, .content-area .form-container .form-content .input-fields i{
     border: 1px solid #dbf1ff;
     height: 40px;
     width: 40px;
@@ -510,25 +523,122 @@ ul li h6{
     line-height: 40px;
     text-align: center;
     border-radius: 50px;
+    color: #303030;
+    
     
     /* background-color: #FAFAFA; */
    
 }
-.medias .icons i:hover{
+.content-area .form-container .form-content .medias .line
+{
+    position: relative;
+    /* height: 1px; */
+    
+}
+.content-area .form-container .form-content .medias .line .or{
+    height: 30px ;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    
+    border-radius: 5px;
+    position: relative;
+    position: absolute;
+    left: 46%;
+   top: -15px;
+   background-color: white;
+}
+.content-area .form-container .form-content .register-btn 
+{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    
+}
+.content-area .form-container .form-content .register-btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.form-content .medias .icons i:hover{
    
     transition: all 0.2s ease-in-out;
     background-color: #4267B2;
     color: white;
 }
-.medias .icons i:nth-child(2):hover
+.form-content .medias .icons .fa-google:hover
 {
     background-color: #0F9D58;
     color: white;
 }
-.medias .icons i:nth-child(3):hover{
+.form-content .medias .icons .fa-twitter:hover{
     background-color: #17A9FD;
     color: white;
 }
+
+.content-area .sidebar .container, .content-area .content-details .container
+{
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.content-area .sidebar .profile
+{
+    height: 170px;
+    /* border: 1px solid red; */
+    line-height: 140px;
+    text-align: center;
+}
+.content-area .sidebar .profile img
+{
+    border-radius: 50%;
+}
+.content-area .sidebar ul li 
+{
+    height: 40px;
+    /* border: 1px solid gray; */
+    line-height: 40px;
+    margin-top: 10px;
+    display: block;
+    padding-left: 0.5rem;
+    border-radius: 10px;
+    
+}
+.content-area .sidebar ul li:hover{
+    background-color: #dbf1ff;
+
+}
+.content-area .sidebar ul li:hover a{
+    opacity: 1;
+}
+.content-area .sidebar ul li a{
+    padding-left: 0.5rem;
+    color: black;
+    text-decoration: none;
+    opacity: 0.5;
+
+}
+.content-area .sidebar ul li i{
+    height: 25px;
+    width: 25px;
+    border: 1px solid #303030;
+    line-height: 25px;
+    text-align: center;
+    color: coral;
+    border-radius: 50%;
+    
+}
+
+.content-area .content-details .conetnts .content .f-name{
+    display: block;
+    /* flex-direction: column; */
+}
+
+
+.subtitle
+{
+    border-bottom: 1px solid gray;
+}
+
 
 
 
