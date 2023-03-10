@@ -646,22 +646,30 @@ ul li h6{
   
   
     
-.second-nav ul
+.second-nav .links
 {
     position: absolute;
     background-color:#dbf1ff ;
-    top: 12px;
-    right: 120%;
+    top: 35px;
+    right: 115%;
     z-index: 5;
     height: 100vh;
-    display: block;
     width: 100%;
-   text-align: center;
-   overflow: hidden;
-  transition: all 1s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    /* border :1px solid black; */
+    position: absolute;
+    
 }
 
+.second-nav .links li
 
+{
+    display: flex;
+    flex-direction: column;
+
+}
     .hamburger{
         display: block;
     }
@@ -675,7 +683,8 @@ ul li h6{
 
     .second-nav .links.active{
         display: block;
-        right: 0%;
+        right: 10%;
+        width: 100%;
         list-style: 20px;
     }
     
