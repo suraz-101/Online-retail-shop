@@ -581,6 +581,8 @@ ul li h6{
     background-color: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
+
+
 .content-area .sidebar .profile
 {
     height: 170px;
@@ -663,13 +665,7 @@ ul li h6{
     
 }
 
-.second-nav .links li
 
-{
-    display: flex;
-    flex-direction: column;
-
-}
     .hamburger{
         display: block;
     }
@@ -677,6 +673,7 @@ ul li h6{
     .second-nav
     {
         display: flex;
+        /* flex-direction: column; */
         justify-content: space-between;
         align-items: center;
     }
@@ -686,6 +683,7 @@ ul li h6{
         right: 10%;
         width: 100%;
         list-style: 20px;
+        /* border: 2px solid blue; */
     }
     
 }
